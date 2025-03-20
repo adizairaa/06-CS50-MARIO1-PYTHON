@@ -1,0 +1,12 @@
+print('Altura: ', end='')
+h = int(input())
+
+while h < 1 or h > 8:
+    print("Coloque um valor entre 1 e 8")
+    print('Altura: ', end='')
+    h = int(input())
+
+for i in range(1, h + 1):  # Loop que controla a altura da pirâmide
+    print(" " * (h - i) + "#" * i)  # Imprime espaços seguidos de hashes 
+                                    #" " * (h - i) → Gera os espaços à esquerda para alinhar a pirâmide corretamente.
+                                   "#" * i → Gera a quantidade correta de # para cada linha.
